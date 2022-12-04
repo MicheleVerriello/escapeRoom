@@ -20,7 +20,7 @@ public class PlayerCreationMenu : MonoBehaviour
 
     public void Save()
     {
-        //PrefabUtility.SaveAsPrefabAsset(player, "Assets/Player.prefab");
-        SceneManager.LoadScene(0);
+        PrefabUtility.SaveAsPrefabAsset(player, "Assets/Player.prefab");
+        
     }
 }

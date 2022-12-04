@@ -13,6 +13,6 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeSceneIndex(int index)
     {
-        SceneManager.LoadScene(index);
+        SceneManager.LoadSceneAsync(index);
     }
 }
