@@ -7,7 +7,7 @@ public class OutfitChanger : MonoBehaviour
   
     public SpriteRenderer bodyPart;
 
-    public List<Sprite> options = new List<Sprite>();
+    public List<Sprite> options = new();
 
     private int currentOption = 0;
     public void NextOption()

@@ -8,7 +8,7 @@ using System.IO;
 public class PlayerCreationMenu : MonoBehaviour
 {
     public GameObject player;
-    public List<OutfitChanger> outfitChangers = new List<OutfitChanger>();
+    public List<OutfitChanger> outfitChangers = new();
 
     public void RandomizePlayer()
     {
@@ -20,7 +20,7 @@ public class PlayerCreationMenu : MonoBehaviour
 
     public void Save()
     {
-        PrefabUtility.SaveAsPrefabAsset(player, "Assets/Player.prefab");
+        //PrefabUtility.SaveAsPrefabAsset(player, "Assets/Player.prefab");
         SceneManager.LoadScene(0);
     }
 }
