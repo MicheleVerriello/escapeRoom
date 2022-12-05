@@ -9,37 +9,37 @@ public class OutfitChanger : MonoBehaviour
 
     public List<Sprite> options = new();
 
-    private int currentOption = 0;
+    private int m_CurrentOption = 0;
     public void NextOption()
     {
-        currentOption++;
-        if (currentOption >= options.Count)
+        m_CurrentOption++;
+        if (m_CurrentOption >= options.Count)
         {
-            currentOption = 0;
+            m_CurrentOption = 0;
         }
 
-        bodyPart.sprite = options[currentOption];
+        bodyPart.sprite = options[m_CurrentOption];
     }
 
     public void PreviousOption()
     {
 
         
-        if (currentOption == 0)
+        if (m_CurrentOption == 0)
         {
-            currentOption = options.Count - 1;
+            m_CurrentOption = options.Count - 1;
         }
         else
         {
-            currentOption--;
+            m_CurrentOption--;
         }
 
-        bodyPart.sprite = options[currentOption];
+        bodyPart.sprite = options[m_CurrentOption];
     }
 
     public void Randomize()
     {
-        currentOption = Random.Range(0, options.Count - 1);
-        bodyPart.sprite = options[currentOption];
+        m_CurrentOption = Random.Range(0, options.Count - 1);
+        bodyPart.sprite = options[m_CurrentOption];
     }
 }
