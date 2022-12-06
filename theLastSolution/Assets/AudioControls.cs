@@ -8,6 +8,7 @@ public class AudioControls : MonoBehaviour
     private void Awake()
     {
         GameObject[] musicObjects = GameObject.FindGameObjectsWithTag("GameMusic");
+        Debug.Log("music objects = " + musicObjects.Length);
         if (musicObjects.Length > 1)
         {
             Destroy(this.gameObject);
