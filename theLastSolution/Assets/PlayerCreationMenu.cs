@@ -1,9 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEditor;
-using System.IO;
+using UnityEngine;
 
 public class PlayerCreationMenu : MonoBehaviour
 {
@@ -20,7 +17,12 @@ public class PlayerCreationMenu : MonoBehaviour
 
     public void Save()
     {
-        PrefabUtility.SaveAsPrefabAsset(player, "Assets/Player.prefab");
-        
+        bool prefabSuccess;
+        PrefabUtility.SaveAsPrefabAsset(player, "Assets/Resources/Player.prefab", out prefabSuccess);
+        if (prefabSuccess == true)
+            Debug.Log("Prefab was saved successfully");
+        else
+            Debug.Log("Prefab failed to save" + prefabSuccess);
+
     }
 }

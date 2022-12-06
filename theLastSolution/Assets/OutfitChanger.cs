@@ -12,12 +12,18 @@ public class OutfitChanger : MonoBehaviour
     private int m_CurrentOption = 0;
     public void NextOption()
     {
-        m_CurrentOption++;
-        if (m_CurrentOption >= options.Count)
+        
+        if (m_CurrentOption < options.Count - 1)
+        {
+            m_CurrentOption = m_CurrentOption + 1;
+        } 
+        else
         {
             m_CurrentOption = 0;
         }
 
+        Debug.Log("Sprite = " + bodyPart.sprite.ToString());
+        Debug.Log("m_CurrentOption = " + m_CurrentOption);
         bodyPart.sprite = options[m_CurrentOption];
     }
 
@@ -25,13 +31,13 @@ public class OutfitChanger : MonoBehaviour
     {
 
         
-        if (m_CurrentOption == 0)
+        if (m_CurrentOption > 0)
         {
-            m_CurrentOption = options.Count - 1;
+            m_CurrentOption = m_CurrentOption - 1;
         }
         else
         {
-            m_CurrentOption--;
+            m_CurrentOption = options.Count - 1;
         }
 
         bodyPart.sprite = options[m_CurrentOption];
