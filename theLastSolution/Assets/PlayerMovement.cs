@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float speed = 400f;
+    private float speed = 2000f;
     private Vector2 playerDirection;
 
     [SerializeField] private Rigidbody2D rigidBody;
@@ -25,18 +25,6 @@ public class PlayerMovement : MonoBehaviour
         float directionY = Input.GetAxisRaw("Vertical");
 
         playerDirection = new Vector2(directionX, directionY).normalized;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (speed == 400)
-            {
-                speed = speed * 5;
-            }
-            else
-            {
-                speed = 400;
-            }
-        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
