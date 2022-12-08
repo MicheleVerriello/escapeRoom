@@ -630,7 +630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &257436784
 Transform:
   m_ObjectHideFlags: 0
@@ -2287,13 +2287,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9baf65cedc1214f8978b00e926a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogCanvas: {fileID: 1003938608}
   textDisplay: {fileID: 1891199941}
+  continueButton: {fileID: 1157849238}
   sentences:
   - 'TU : Hey Hasbulla, che ci fai qui?'
   - 'HASBULLA : Sono qui per aiutarti'
   - 'HASBULLA : Fai molta attenzione alle mie parole'
   - "HASBULLA : Ti racconter\xF2 una filastrocca che non dovrai dimenticare"
-  typingSpeed: 0.02
+  - 'HASBULLA : Se il livello vuoi superare, una porta devi trovare'
+  - 'HASBULLA : Delle chiavi appariranno, che le casse apriranno'
+  - "HASBULLA : Il mio lavoro qui \xE8 finito, a trovare un altro amico ti invito"
+  typingSpeed: 0.03
 --- !u!1 &960030976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7572,6 +7577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasDialog: {fileID: 1003938608}
+  keys: {fileID: 257436783}
 --- !u!1 &2036139173
 GameObject:
   m_ObjectHideFlags: 0

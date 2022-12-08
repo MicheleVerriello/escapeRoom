@@ -7,6 +7,7 @@ public class HasbullaCollision : MonoBehaviour
 {
 
     public GameObject canvasDialog;
+    public GameObject keys;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class HasbullaCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         canvasDialog.SetActive(true);
+        keys.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D col)

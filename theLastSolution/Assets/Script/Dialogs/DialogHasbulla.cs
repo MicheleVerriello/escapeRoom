@@ -6,9 +6,11 @@ using TMPro;
 
 public class DialogHasbulla : MonoBehaviour
 {
+    public GameObject dialogCanvas;
     public TextMeshProUGUI textDisplay;
+    public GameObject continueButton;
     public string[] sentences;
-    private int index;
+    private int _index;
     public float typingSpeed;
 
     void Start()
@@ -16,9 +18,17 @@ public class DialogHasbulla : MonoBehaviour
         StartCoroutine(Type());
     }
 
+    void Update()
+    {
+        if (textDisplay.text == sentences[_index])
+        {
+            continueButton.SetActive(true);
+        }
+    }
+
     IEnumerator Type()
     {
-        foreach (char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[_index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -27,15 +37,19 @@ public class DialogHasbulla : MonoBehaviour
 
     public void NextSentence()
     {
-        if (index < sentences.Length - 1)
+        continueButton.SetActive(false);
+
+        if (_index < sentences.Length - 1)
         {
-            index++;
+            _index++;
             textDisplay.text = "";
             StartCoroutine(Type());
         }
         else
         {
+            _index = 0;
             textDisplay.text = "";
+            StartCoroutine(Type());
         }
     }
 }
