@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CodePinController : MonoBehaviour
 {
-    private string _winningCode = "1501";
+    private readonly string _winningCode = "0753";
 
     public GameObject errorText;
     public GameObject winningCanvas;

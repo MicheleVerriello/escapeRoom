@@ -17,12 +17,12 @@ public class PlayerCreationMenu : MonoBehaviour
 
     public void Save()
     {
-        bool prefabSuccess;
-        PrefabUtility.SaveAsPrefabAsset(player, "Assets/Resources/Player.prefab", out prefabSuccess);
-        if (prefabSuccess == true)
-            Debug.Log("Prefab was saved successfully");
-        else
-            Debug.Log("Prefab failed to save" + prefabSuccess);
+        //bool prefabSuccess;
+        //PrefabUtility.SaveAsPrefabAsset(player, "Assets/Resources/Player.prefab", out prefabSuccess);
+        //if (prefabSuccess == true)
+            //Debug.Log("Prefab was saved successfully");
+        //else
+           // Debug.Log("Prefab failed to save" + prefabSuccess);
 
     }
 }

@@ -673,11 +673,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ebc4c8acffeeca41934c2f2393a45be, type: 3}
   - {fileID: 21300000, guid: debc4edcc117abe4f8600caca642318f, type: 3}
   - {fileID: 21300000, guid: a366da325a505654e94ff671e63cde89, type: 3}
---- !u!212 &67512209 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1203943631378170873, guid: d901fc6fcc522d94c96328a1791a89da, type: 3}
-  m_PrefabInstance: {fileID: 752616220}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &72555242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1340,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138621829}
   m_CullTransparentMesh: 1
+--- !u!212 &168823377 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7380071990580835313, guid: d901fc6fcc522d94c96328a1791a89da, type: 3}
+  m_PrefabInstance: {fileID: 752616220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &185159221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,7 +2037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cbbed57c8fe344198884ff81bcfa48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPart: {fileID: 67512209}
+  bodyPart: {fileID: 168823377}
   options:
   - {fileID: 21300000, guid: f8d916881a19b7a4a99ec74753414a40, type: 3}
   - {fileID: 21300000, guid: 0a4a3c212d77eb243aeaac660261fb0f, type: 3}

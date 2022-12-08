@@ -10,6 +10,6 @@ public class SpriteLoader : MonoBehaviour
     void Start()
     {
         Debug.Log("Loading player");
-        playerToLoad = PrefabUtility.LoadPrefabContents("Assets/Resources/Player.prefab");
+        //playerToLoad = PrefabUtility.LoadPrefabContents("Assets/Resources/Player.prefab");
     }
 }

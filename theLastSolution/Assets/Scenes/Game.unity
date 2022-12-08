@@ -4883,7 +4883,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CASSA 3
+  m_text: "CASSA 3\n\nTre indizi ti sto fornendo\nma ad uno stai attento!\n\nTanti
+    sono i pianeti visibili ad\nocchio nudo\n\nTanti sono i pilastri dell'islam\n\nUno
+    in pi\xF9 dei cerchi olimpici"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5534,7 +5536,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CASSA 2
+  m_text: "CASSA 2\n\nQuesta \xE8 complicata\no sar\xE0 una passeggiata\n\nC'\xE8
+    il bello solo a scopa \n\nTante sono le note musicali"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9072,6 +9075,7 @@ GameObject:
   - component: {fileID: 1708404673}
   - component: {fileID: 1708404672}
   - component: {fileID: 1708404671}
+  - component: {fileID: 1708404675}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9161,6 +9165,19 @@ RectTransform:
   m_AnchoredPosition: {x: -887.0569, y: 189.42676}
   m_SizeDelta: {x: 1763.9482, y: 1020.34}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1708404675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708404670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053bef9255ae43d47a2a1c5675f52c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 662591670}
 --- !u!1 &1709792901
 GameObject:
   m_ObjectHideFlags: 0
@@ -11254,7 +11271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "CASSA 1\nLa pi\xF9 facile da capire\nda un numero si deve pur partire
-    !\nSe ancora non l'hai capito\nPrima del primo prova a contare"
+    !\n\n   Sotto di esso tutti tremano\n\n\n        Un renato della musica leggera\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
