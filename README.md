@@ -9,4 +9,5 @@ Per recuperare il codice sorgente potete fare un clone o verrà scaricato quando
 La versione dello UnityEditor compatibile per il gioco è 2021.3.15f1 (è consigliabile usare questa per evitare problemi di compatibilità).
 <hr>
 <h2>Informazioni Esame</h2>
-Il documento di game design e la presentazione per l'esame sono locati nella cartella <b>"examResources"<b> del progetto.
+Il documento di game design è locato nella cartella <b>"examResources"<b> del progetto.
+Il link alla presentazione apparirà per magia QUI il giorno dell'esame.
