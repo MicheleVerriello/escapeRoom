@@ -10,4 +10,4 @@ La versione dello UnityEditor compatibile per il gioco è 2021.3.15f1 (è consig
 <hr>
 <h2>Informazioni Esame</h2>
 Il documento di game design è locato nella cartella <b>"examResources"<b> del progetto.<br>
-Il link alla presentazione apparirà per magia QUI il giorno dell'esame.
+Il link alla presentazione https://www.figma.com/proto/w5RSi5r9HhEwhSlMzIycTH/GamePresentation?page-id=0%3A1&node-id=1%3A2&viewport=-10445%2C431%2C0.65&scaling=contain.
